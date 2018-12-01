@@ -11,6 +11,13 @@
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
+        completions.
     </string>
+    <string name="but_monday">Monday</string>
+    <string name="but_tuesday">Tuesday</string>
+    <string name="but_wednesday">Wednesday</string>
+    <string name="but_thrusday">Thrusday</string>
+    <string name="but_friday">Friday</string>
+    <string name="but_saturday">Saturday</string>
+    <string name="but_sunday">Sunday</string>
 </resources>

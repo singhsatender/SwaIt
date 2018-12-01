@@ -40,6 +40,7 @@ public class WeeklySchedule extends AppCompatActivity implements View.OnClickLis
             case R.id.but_monday:
                 Intent intent = new Intent(getApplicationContext(), shift_give.class);
                 startActivity(intent);
+                intent.putExtra("monday")
 
                 break;
             case R.id.but_tuesday:
