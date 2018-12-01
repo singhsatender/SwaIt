@@ -4,7 +4,9 @@
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_register">Register</string>
+
+<string name="action_sign_in">Sign In</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
@@ -20,4 +22,26 @@
     <string name="but_friday">Friday</string>
     <string name="but_saturday">Saturday</string>
     <string name="but_sunday">Sunday</string>
+	<string name="action_enter_new_schedule">Enter Schedule</string>
+	<string name="hint_name">Name</string>
+	<string name="hint_start_time">Shift Start Time</string>
+	<string name="hint_end_time">Shift End Time</string>
+	<string name="action_submit">Submit</string>
+	-<string-array name="days_in_week">
+
+	<item>Monday</item>
+
+	<item>Tuesday</item>
+
+	<item>Wednesday</item>
+
+	<item>Thursday</item>
+
+	<item>Friday</item>
+
+	<item>Saturday</item>
+
+	<item>Sunday</item>
+
+	</string-array>
 </resources>
