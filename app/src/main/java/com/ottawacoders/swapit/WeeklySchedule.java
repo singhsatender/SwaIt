@@ -36,12 +36,10 @@ public class WeeklySchedule extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), shift_give.class);
         switch (view.getId()) {
             case R.id.but_monday:
-                Intent intent = new Intent(getApplicationContext(), shift_give.class);
-                startActivity(intent);
-                intent.putExtra("monday")
-
+                intent.putExtra("day","Monday");
                 break;
             case R.id.but_tuesday:
 
@@ -62,6 +60,7 @@ public class WeeklySchedule extends AppCompatActivity implements View.OnClickLis
 
                 break;
         }
+        startActivity(intent);
 
     }
 

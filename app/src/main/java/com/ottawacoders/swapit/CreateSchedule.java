@@ -3,7 +3,8 @@ package com.ottawacoders.swapit;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class CreateSchedule extends AppCompatActivity {
+public class
+CreateSchedule extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

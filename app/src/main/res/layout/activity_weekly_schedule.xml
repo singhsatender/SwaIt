@@ -24,7 +24,7 @@
             android:layout_height="60dp"
             android:text="@string/but_monday"
             android:textAppearance="@android:style/TextAppearance.Material.Large"
-            android:onClick=""/>
+           />
 
         <Button
             android:id="@+id/but_tuesday"
