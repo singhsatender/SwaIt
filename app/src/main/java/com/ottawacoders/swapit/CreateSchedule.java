@@ -8,7 +8,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TimePicker;
+
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
 
 public class CreateSchedule extends AppCompatActivity {
     EditText startTime;
@@ -33,17 +36,26 @@ public class CreateSchedule extends AppCompatActivity {
             @Override
             public void onTimeSet(TimePicker timePicker, int i, int i1) {
                 if (startTime==view){
-                    startTime.setText(i+":"+i1);
+                    startTime.setText(i+""+i1);
                 }
                 else
-                    endTime.setText(i+":"+i1);
+                    endTime.setText(i+""+i1);
             }
         }, hour,minute,true);
         timePickerDialog.show();
     }
 
     public void submitSchedule(View view){
+        //Save to schedule
+        Shift shift = new Shift(Integer.parseInt(startTime.getText().toString()),Integer.parseInt(endTime.getText().toString()),name.getText().toString());
+        ArrayList<Shift> shifts = new ArrayList<Shift>();
+        shifts.add(shift);
+        HashMap<String,ArrayList<Shift>> map1 = new HashMap<String,ArrayList<Shift>>();
+        map1.put(name.getText().toString(),shifts);
         String day = spinner.getSelectedItem().toString();
+        LoginActivity.schedule.put(day,map1);
+
+
         Intent intent = new Intent(this, WeeklySchedule.class);
         intent.putExtra("personName", name.getText());
         intent.putExtra("day", day);

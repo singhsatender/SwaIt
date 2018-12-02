@@ -39,32 +39,49 @@ public class WeeklySchedule extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(getApplicationContext(), shift_give.class);
-        System.out.println("create schedule called"+view.getId());
         switch (view.getId()) {
             case R.id.but_monday:
                 intent.putExtra("day","Monday");
+
                 startActivity(intent);
                 break;
             case R.id.but_tuesday:
+                intent.putExtra("day","Tuesday");
+
+                startActivity(intent);
 
                 break;
             case R.id.but_wednesday:
+                intent.putExtra("day","Wednesday");
+
+                startActivity(intent);
 
                 break;
             case R.id.but_thrusday:
+                intent.putExtra("day","Thursday");
+
+                startActivity(intent);
 
                 break;
             case R.id.but_friday:
+                intent.putExtra("day","Friday");
+
+                startActivity(intent);
 
                 break;
             case R.id.but_saturday:
+                intent.putExtra("day","Saturday");
+
+                startActivity(intent);
 
                 break;
             case R.id.but_sunday:
+                intent.putExtra("day","Sunday");
+
+                startActivity(intent);
 
                 break;
             case R.id.create_schedule:
-                System.out.println("create schedule called");
                 Intent intent1 = new Intent(getApplicationContext(), CreateSchedule.class);
                 startActivity(intent1);
                 break;
