@@ -26,6 +26,8 @@
 	<string name="hint_name">Name</string>
 	<string name="hint_start_time">Shift Start Time</string>
 	<string name="hint_end_time">Shift End Time</string>
+    <string name="but_set_schedule">Set Schedule</string>
+    <string name="but_get_schedule">View Schedule</string>
 	<string name="action_submit">Submit</string>
 	-<string-array name="days_in_week">
 
