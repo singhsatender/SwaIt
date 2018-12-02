@@ -21,6 +21,7 @@ public class WeeklySchedule extends AppCompatActivity implements View.OnClickLis
         Button friday = (Button) findViewById(R.id.but_friday);
         Button saturday = (Button) findViewById(R.id.but_saturday);
         Button sunday = (Button) findViewById(R.id.but_sunday);
+        Button createSchedule = (Button) findViewById(R.id.create_schedule);
 
         // Adding listeners for all the buttons.
 
@@ -31,15 +32,18 @@ public class WeeklySchedule extends AppCompatActivity implements View.OnClickLis
         friday.setOnClickListener(this);
         saturday.setOnClickListener(this);
         sunday.setOnClickListener(this);
+        createSchedule.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(getApplicationContext(), shift_give.class);
+        System.out.println("create schedule called"+view.getId());
         switch (view.getId()) {
             case R.id.but_monday:
                 intent.putExtra("day","Monday");
+                startActivity(intent);
                 break;
             case R.id.but_tuesday:
 
@@ -59,8 +63,13 @@ public class WeeklySchedule extends AppCompatActivity implements View.OnClickLis
             case R.id.but_sunday:
 
                 break;
+            case R.id.create_schedule:
+                System.out.println("create schedule called");
+                Intent intent1 = new Intent(getApplicationContext(), CreateSchedule.class);
+                startActivity(intent1);
+                break;
         }
-        startActivity(intent);
+
 
     }
 

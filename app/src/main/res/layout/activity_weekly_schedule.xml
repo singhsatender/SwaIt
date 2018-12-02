@@ -69,5 +69,12 @@
             android:text="@string/but_sunday"
             android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
+        <Button
+            android:id="@+id/create_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Create Schedule"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

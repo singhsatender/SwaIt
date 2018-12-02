@@ -83,12 +83,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         //create schedule
         schedule.put("Monday",map1);
 
-        //Access Schedule
-//        for (HashMap.Entry<String,ArrayList<Shift>> temMonday:schedule.get("Monday").entrySet()) {
-//            System.out.println("Schedule for "+temMonday.getKey());
-//                for(Shift shift: temMonday.getValue())
-//                    System.out.println("Start Time: " + shift.getStartTime()+"Start Time: " + shift.getEndTime());
-//        }
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
